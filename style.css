@@ -1,0 +1,76 @@
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 125%;
+    line-height: 1.5;
+    color: #5F0F40
+}
+
+body {
+    min-height: 100vh;
+    background: #FCF5ED
+}
+
+main {
+    max-width: max-content;
+    margin: 4em auto 0 auto;
+    padding: 2em;
+    background-color: lightgray;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.month-indicator {
+    color:#5F0F40;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+.day-of-week,
+.date-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.day-of-week {
+    margin-top: 1.15em;
+}
+
+.day-of-week > * {
+    font-size: .8em;
+    color:#5F0F40;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.date-grid {
+    margin-top: 0.5em;
+}
+
+.date-grid button:first-child{
+    grid-column: 4;
+}
+
+.date-grid button{
+    position: relative;
+    width: 5.0ch;
+    height: 5.0ch;
+    border-radius: 25%;
+    background-color: white;
+    border-color: #5F0F40;
+
+}
+
+.date-grid button:hover,
+.date-grid button:focus {
+    outline: none;
+    background-color:purple;
+}
+
+.date-grid button:active,
+.date-grid button.is-selected {
+    background-color: blueviolet;
+}
